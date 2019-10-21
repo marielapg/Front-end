@@ -1,15 +1,27 @@
 import React from "react";
 //import styled from "styled-components";
-import {SignInBtn, CreatAccBtn} from '../styles/Buttons';
-import {BtnDiv} from '../styles/Divs';
+import { SignInBtn, CreatAccBtn } from "../styles/Buttons";
+import { FoodApp, FoodHeader, FoodTag, FoodH1 } from "../styles/AppStyles";
+import { BtnDiv } from "../styles/Divs";
 
 const Welcome = props => {
   return (
-    <BtnDiv>
-      <SignInBtn>Sign In</SignInBtn>
-      <CreatAccBtn> Create Account</CreatAccBtn>
-      <p>Just Browsing -></p>
-    </BtnDiv>
+    <>
+      <FoodHeader>
+        <FoodH1>FoodieFun</FoodH1>
+        <FoodTag>
+          <p>
+            A place for foodies to share and rate their favorite spots, dishes,
+            and overall dining experience
+          </p>
+        </FoodTag>
+      </FoodHeader>
+      <BtnDiv>
+        <SignInBtn>Sign In</SignInBtn>
+        <CreatAccBtn> Create Account</CreatAccBtn>
+        <p>Just Browsing -></p>
+      </BtnDiv>
+    </>
   );
 };
 
