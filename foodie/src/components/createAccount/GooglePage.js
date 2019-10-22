@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+
 import { ProfileIcon, Bg, BtnStyle } from "../vectors/Vectors";
 import { SignInBtn } from "../styles/Buttons";
 import { BtnDiv } from "../styles/Divs";
@@ -24,7 +26,7 @@ const CreateWithGoogle = props => {
           <SignInBtn>Create</SignInBtn>
         </BtnDiv>
       </form>
-      <p>  Never mind</p>
+      <Link to={'/'}><p style={{ color: "white" }}>Never mind</p></Link>
     </div>
   );
 };

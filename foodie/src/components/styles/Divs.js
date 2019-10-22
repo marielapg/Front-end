@@ -13,5 +13,14 @@ export const BtnDiv = styled.div`
 `;
 
 export const ImgDiv = styled.div`
-background-image: url('../img/food-macarons-macaroons-212691.png');
+border: 1px solid red;
+width: 54%;
+`;
+
+export const NavDiv = styled.div`
+display: Flex;
+`;
+
+export const LeftDiv = styled.div`
+width: 46%;
 `;

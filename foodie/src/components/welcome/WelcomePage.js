@@ -1,7 +1,7 @@
 import React from "react";
-//import styled from "styled-components";
+import {Link} from 'react-router-dom';
 import { SignInBtn, CreatAccBtn } from "../styles/Buttons";
-import { FoodApp, FoodHeader, FoodTag, FoodH1 } from "../styles/AppStyles";
+import { FoodHeader, FoodTag, FoodH1 } from "../styles/AppStyles";
 import { BtnDiv } from "../styles/Divs";
 
 const Welcome = props => {
@@ -17,8 +17,8 @@ const Welcome = props => {
         </FoodTag>
       </FoodHeader>
       <BtnDiv>
-        <SignInBtn>Sign In</SignInBtn>
-        <CreatAccBtn> Create Account</CreatAccBtn>
+        <Link to={'/signin'}><SignInBtn>Sign In</SignInBtn></Link>
+        <Link to={'/createAccount'}><CreatAccBtn> Create Account</CreatAccBtn></Link>
         <p>Just Browsing -></p>
       </BtnDiv>
     </>
