@@ -127,18 +127,33 @@ table {
 }
 * {
   box-sizing: border-box;
-  background-color: #313036;
+  font-family: 'Lato';
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
 }
 body {
   font-family: 'Lato', sans-serif;
   padding: 25px;
+}
+h1,
+h3,
+h4 {
+  width: 100%;
+}
+h1 {
+  font-size: 7.2rem;
+}
+h3,
+h4 {
+  font-size: 3rem;
 }
 header {
   width: 100%;
 }
 header nav {
   display: flex;
-  justify-content: flex-start;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -171,14 +186,33 @@ header nav a {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .pimg {
+    flex-direction: column;
+  }
+}
 .pimg .pic {
   margin-top: 13px;
+  min-width: 400px;
   width: 30%;
-  height: 40%;
+}
+@media (max-width: 800px) {
+  .pimg .pic {
+    min-width: 501px;
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .pimg .pic {
+    width: 100%;
+    margin-top: 13px;
+    /* width: 30%; */
+    /* height: 40%; */
+    min-width: 300px;
+  }
 }
 .pimg p {
-  width: 25%;
-  height: 80%;
+  border: 2px solid red;
   margin: 10px 10px;
   display: flex;
   align-items: center;
@@ -211,7 +245,7 @@ header nav a {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  color: white;
+  color: #FFFDF5;
   padding: 10px;
   margin: 0 auto;
 }
@@ -229,7 +263,6 @@ header nav a {
 footer {
   color: #FFFDF5;
 }
-/*About */
 #mainAbout .aboutStuff h1 {
   width: 100%;
   margin: 20px 0;
@@ -291,5 +324,3 @@ footer {
 #mainAbout footer {
   color: #FFFDF5;
 }
-/* Mobile  */
-/* Tablet  */
