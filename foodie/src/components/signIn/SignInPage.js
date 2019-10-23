@@ -44,7 +44,7 @@ const SignIn = ({ errors, touched, values, status }) => {
             <SignInBtn>Sign In</SignInBtn>
           </Link>
           <br></br>
-          <p>Forgot Password?</p>
+          <Link to={'/createAccount'} style={{ color: "white", textDecoration: 'none' }}><p>Forgot Password?</p></Link>
         </BtnDiv>
       </Form>
     </div>

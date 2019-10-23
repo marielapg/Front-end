@@ -8,7 +8,7 @@ import SignIn from './components/signIn/SignInPage';
 import CreateAccount from './components/createAccount/CreateAccountPage';
 import CreateWithFacebook from './components/createAccount/FacebookPage';
 import CreateWithGoogle from './components/createAccount/FacebookPage';
-import PremiumNav from './components/premiumNav/PremiumNavPage';
+
 
 
 
@@ -21,7 +21,7 @@ function App() {
       <Route path="/createAccount" render = {props => <CreateAccount {...props} />}/>
       <Route path="/createWithFb" render = {props => <CreateWithFacebook {...props} />}/>
       <Route path="/createWithGoogle" render = {props => <CreateWithGoogle {...props} />}/>
-      <Route path="/nav" render = {props => <PremiumNav {...props} />}/>
+      
     </FoodApp>
   );
 }
