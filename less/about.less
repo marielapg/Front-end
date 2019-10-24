@@ -16,46 +16,55 @@
                     margin: 20px 10px;
                     .custom-layout(center, center);
                     font-size: 30px;
-                     color: @white;
+                     color: @white;                   
+                     
                 }
-            
-         }
+          
+        }
 
          .listItems {
              p {
-                 
                 width: 100%;
                 text-align: center;
-                font-size: 30px;
-                color: @white;
+                font-size: 24px;
+                color:@white;
+                font-family:'Lato';
+                 }
              }
-         }
-        ul {
-            li {
-                width: 100%;
-                padding: 10px;
-                height: 80%;
-                 margin: 20px 10px;
-                 .custom-layout(space-around, center);
-                font-size: 30px;
-                color: @white;
-            }
-        }
+    
         .teamwork {
+            
             img {
                 margin-top: 13px;
                 margin: 0 auto;
-                width: 30%;
-                height: 40%;
+                padding: 20px;
+                width: 100%;
+                height: auto;
+                max-width:500px;
                 .custom-layout(space-around, center);
             }
+
+            .teamwork-list{
+                display: flex;
+                flex-direction: column;
+                
+            }
+           
             h4 {
                 width: 100%;
                 padding: 10px;
                  margin: 20px 10px;
-                 .custom-layout(space-around, center);
-                font-size: 30px;
+                 .custom-layout(center, center);
+                font-size: 25px;
+                text-decoration: underline;
+                color: @white;
+                @media @mobile{
+                    display: flex;
+                    flex-direction: column;
+                }
+            
                  a{
+                     padding: 1rem;
                     text-decoration: underline;
                     color: @white;
                  }
@@ -64,7 +73,9 @@
 
         footer{
             color:@white;
-    
+            
         }
-    
+        p{
+            font-size: 2rem;
+        }
     }

@@ -5,17 +5,17 @@
         
 
              
-         nav{
-            .custom-layout(space-evenly, center);
+        //  nav{
+        //     .custom-layout(space-evenly, center);
              
-             a{
+        //      a{
             
-            margin: 20px 0;
-            font-size: @fontsize;
-            color:@white;
-            text-decoration: none;
-             }
-         }
+        //     margin: 20px 0;
+        //     font-size: @fontsize;
+        //     color:@white;
+        //     text-decoration: none;
+        //      }
+        //  }
     }
 
     #main {
@@ -58,29 +58,14 @@
                     }
                    
                    @media @mobile{
-                       
                  width: 100%;
                     margin-top: 13px;
-                    /* width: 30%; */
-                    /* height: 40%; */
                     min-width: 300px;
-                    // min-width: 800px;
-                    // width: 70%;
-                    // height: 40%;
+                    
                 }
                 }
 
-                p{
-                // width: 25%;
-                // height: 80%;
-                border: 2px solid red;
-                 margin: 10px 10px;
-                display: flex;
-                align-items: center;
-                font-size: 30px;
-                color: @white;
-                
-                }
+               
             }
         
 
@@ -88,7 +73,7 @@
           
     
 
-    #signCreate{
+     #signCreate{
         display: flex; 
         flex-direction: column;
         justify-content: center;
@@ -103,6 +88,7 @@
             padding: 10px;
             margin: 0 auto;
             margin-bottom: @fontsize;
+            border: 2px solid @yellow;
 
             
         }
@@ -115,7 +101,8 @@
             color: @white;
             padding: 10px;
             margin: 0 auto;
-            
+            border: 2px solid @yellow;
+
         }
 
     }    
@@ -134,21 +121,10 @@
 
     footer{
         color:@white;
-
+        p{
+            font-size: 1.5rem;
+        }
     }
 
 
 
-
-        // /* Mobile  */
-        // .container{  
-        //     @media @mobile{
-        //     width: 100%;
-        //     display: flex;
-        //     justify-content: flex-start;   
-        //     }           
-        
-        //     /* Tablet  */
-        //     @media @tablet {
-        //     }    
-        // }    
