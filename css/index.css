@@ -127,6 +127,8 @@ table {
 }
 * {
   box-sizing: border-box;
+  font-family: 'Lato';
+  font-style: normal;
 }
 html {
   font-size: 62.5%;
