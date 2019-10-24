@@ -127,6 +127,7 @@ table {
 }
 * {
   box-sizing: border-box;
+
   font-family: 'Lato';
   font-style: normal;
 }
@@ -153,6 +154,28 @@ h4 {
 }
 header {
   width: 100%;
+
+  background-color: #313036;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 25px;
+}
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav a {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #FFFDF5;
+  text-decoration: none;
+
 }
 #main h1 {
   width: 100%;
@@ -177,6 +200,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 500px) {
   .pimg {
     flex-direction: column;
@@ -199,6 +223,24 @@ header {
     margin-top: 13px;
     min-width: 300px;
   }
+
+.pimg .pic {
+  margin-top: 13px;
+  width: 15%;
+  height: 10%;
+  width: 30%;
+  height: 40%;
+}
+.pimg p {
+  width: 25%;
+  height: 80%;
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-size: 30px;
+  color: #FFFDF5;
+
 }
 #signCreate {
   display: flex;
@@ -217,6 +259,7 @@ header {
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 20px;
+
   border: 2px solid #FFDD67;
 }
 #signCreate .createAcct {
@@ -227,10 +270,16 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+
   color: #FFFDF5;
   padding: 10px;
   margin: 0 auto;
   border: 2px solid #FFDD67;
+
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+
 }
 #justBrowse a {
   width: 100%;
@@ -246,9 +295,12 @@ header {
 footer {
   color: #FFFDF5;
 }
+
 footer p {
   font-size: 1.5rem;
-}
+  }
+/*About */
+
 #mainAbout .aboutStuff h1 {
   width: 100%;
   margin: 20px 0;
@@ -271,6 +323,7 @@ footer p {
 #mainAbout .listItems p {
   width: 100%;
   text-align: center;
+
   font-size: 24px;
   color: #FFFDF5;
   font-family: 'Lato';
@@ -289,12 +342,38 @@ footer p {
 #mainAbout .teamwork .teamwork-list {
   display: flex;
   flex-direction: column;
+
+  font-size: 18px;
+  font-size: 30px;
+  color: #FFFDF5;
+}
+#mainAbout ul li {
+  width: 100%;
+  padding: 10px;
+  height: 80%;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  color: #FFFDF5;
+}
+#mainAbout .teamwork img {
+  margin-top: 13px;
+  margin: 0 auto;
+  width: 30%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 #mainAbout .teamwork h4 {
   width: 100%;
   padding: 10px;
   margin: 20px 10px;
   display: flex;
+
   justify-content: center;
   align-items: center;
   font-size: 25px;
@@ -309,12 +388,24 @@ footer p {
 }
 #mainAbout .teamwork h4 a {
   padding: 1rem;
+
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+#mainAbout .teamwork h4 a {
+
   text-decoration: underline;
   color: #FFFDF5;
 }
 #mainAbout footer {
   color: #FFFDF5;
 }
+
 #mainAbout p {
   font-size: 2rem;
 }
+
+/* Mobile  */
+/* Tablet  */
+
